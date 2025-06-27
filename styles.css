@@ -1,3 +1,4 @@
+/* Custom properties */
 :root {
   --c-grey-900: hsl(217, 19%, 35%);
   --c-grey-500: hsl(214, 17%, 51%);
@@ -7,6 +8,8 @@
   --fw-regular: 500;
   --fw-bold: 700;
 }
+
+/* Global styles */
 
 * {
   box-sizing: border-box;
@@ -23,24 +26,30 @@ body {
   font-family: "Manrope", sans-serif;
   font-size: 13px;
   background-color: var(--c-grey-200);
-  overflow: clip;
+  height: 100vh;
 }
 
 main {
+  /* display: flex; */
+  /* align-items: center; */
   padding-inline: 1.5rem;
 }
 
+/* Card styles */
+
 .card-container {
+  background-color: var(--c-white);
   margin-block: auto;
 }
 
 .card-img-container {
-  width: 100%;
-  height: 200px;
-  overflow: clip;
+  overflow: hidden;
 }
 
 .card-img-container img {
-  object-position: right bottom;
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: 50% 25%;
  
 }
