@@ -1,0 +1,12 @@
+/* font-family: "Manrope", sans-serif; */
+:root {
+  --c-dark-grey-blue: hsl(217, 19%, 35%);
+  --c-medium-grey-blue: hsl(214, 17%, 51%);
+  --c-light-grey-blue: hsl(212, 23%, 69%);
+  --c-light: hsl(210, 46%, 95%);
+  font-size: 13px;
+}
+
+* {
+  
+}
