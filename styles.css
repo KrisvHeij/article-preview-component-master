@@ -1,8 +1,9 @@
 :root {
-  --c-dark-grey-blue: hsl(217, 19%, 35%);
-  --c-medium-grey-blue: hsl(214, 17%, 51%);
-  --c-light-grey-blue: hsl(212, 23%, 69%);
-  --c-light: hsl(210, 46%, 95%);
+  --c-grey-900: hsl(217, 19%, 35%);
+  --c-grey-500: hsl(214, 17%, 51%);
+  --c-grey-400: hsl(212, 23%, 69%);
+  --c-grey-200: hsl(210, 46%, 95%);
+  --c-white: hsl(0, 100%, 100%);
   --fw-regular: 500;
   --fw-bold: 700;
 }
