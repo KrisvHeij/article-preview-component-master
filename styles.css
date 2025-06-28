@@ -58,8 +58,10 @@ img {
   font-size: 13px;
   font-weight: var(--fw-regular);
   line-height: 1.4;
-  letter-spacing: 4px;
+  letter-spacing: 0.25px;
 }
+
+
 
 /* Main styles */
 
@@ -79,35 +81,31 @@ main {
 /* Card styles */
 
 .card-container {
-  position: relative;
   background-color: var(--c-white);
   margin-block: auto;
   border-radius: 10px;
+  overflow: clip;
   box-shadow: 0 40px 40px hsl(210, 29%, 84%, 0.5);
-  /* overflow: hidden; */
 }
 
 /* Card Image */
-.card-img-container {
-  overflow: clip;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
-}
+/* .card-img-container {
+  overflow: hidden;
+} */
 
 .card-img-container img {
   width: 100%;
   height: 200px;
   object-fit: cover;
   object-position: 50% 25%;
+ 
 }
 
 /* Card Text */
 .card-text-container {
   padding-inline: var(--spacing-400);
   padding-block-start: var(--spacing-400);
-  /* padding-block-end: var(--spacing-200); */
-  height: 200px;
-  margin-block-end: var(--spacing-600);
+  padding-block-end: var(--spacing-200);
 }
 
 .card-text-header {
@@ -117,15 +115,14 @@ main {
 
 .card-text-paragraph {
   color: var(--c-grey-500);
-  
+  margin-block-end: var(--spacing-600);
 }
 
 /* Card footer */
 .card-footer-container {
   display: flex;
   align-items: center;
-  /* position: relative; */
-  height: 40px;
+  position: relative;
 }
 
 .card-profile-container {
@@ -153,7 +150,6 @@ main {
 
 .share-btn {
   display: block;
-  position: relative;
   margin-left: auto;
   border-radius: 50%;
   border: 0;
@@ -173,29 +169,27 @@ main {
 /* Card Socials Container */
 
 .card-socials-container {
-  display: flex;
-  align-items: center;
   position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 76px;
   background-color: var(--c-grey-900);
-  padding-block: var(--spacing-200);
-  padding-inline: var(--spacing-400);
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  width: calc(100% + 4rem);
+  height: 76px;
+  bottom: -2rem;
+  left: -2rem;
+  padding-block: 1rem;
+  padding-inline: 2rem;
 }
 
 .card-socials {
   display: flex;
-
+  align-items: center;
+  height: 32px;
 }
 
-.card-socials p {
-  color: var(--c-grey-400);
-  text-transform: uppercase;
+.card-socials img {
+  width: 20px;
+  height: 20px;
 }
+
 
 /* Class for hiding content in JS */
 
