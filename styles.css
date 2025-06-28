@@ -89,12 +89,13 @@ main {
   margin-block: auto;
   border-radius: 10px;
   overflow: clip;
+  box-shadow: 0 40px 40px hsl(210, 29%, 84%, 0.5);
 }
 
 /* Card Image */
-.card-img-container {
-  /* overflow: hidden; */
-}
+/* .card-img-container {
+  overflow: hidden;
+} */
 
 .card-img-container img {
   width: 100%;
@@ -127,7 +128,9 @@ main {
 }
 
 .card-profile-container {
+  width: 100%;
   display: flex;
+  align-items: center;
 }
 
 .card-profile-container img {
@@ -145,4 +148,21 @@ main {
 
 .profile-date {
   color: var(--c-grey-400);
+}
+
+.share-btn {
+  display: block;
+  margin-left: auto;
+  border-radius: 50%;
+  border: 0;
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.share-btn img {
+  max-width: 15px;
 }
