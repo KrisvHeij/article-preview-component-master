@@ -63,7 +63,7 @@ a {
   font-size: 13px;
   font-weight: var(--fw-regular);
   line-height: 1.4;
-  letter-spacing: 0.25px;
+  letter-spacing: 4px;
 }
 
 /* Main styles */
@@ -129,8 +129,9 @@ main {
 }
 
 .card-profile-container {
+  width: 100%;
   padding-block-end: var(--spacing-200);
-  padding-inline-start: var(--spacing-400);
+  padding-inline: var(--spacing-400);
   display: flex;
   align-items: center;
 }
@@ -153,9 +154,7 @@ main {
 }
 
 .share-btn {
-  margin-block-end: var(--spacing-200);
   margin-inline-start: auto;
-  margin-inline-end: var(--spacing-400);
   border-radius: 50%;
   border: 0;
   width: 2rem;
@@ -164,24 +163,23 @@ main {
   justify-content: center;
   align-items: center;
   cursor: pointer;
-  z-index: 5;
 }
 
 .share-btn img {
-  max-width: 15px;
-  color: var(--c-white);
+  width: 15px;
+  height: 15px;
 }
 
 /* Card Socials Container */
 
 .card-socials-container {
   position: absolute;
-  /* display: flex;
-  align-items: center; */
+  display: flex;
+  align-items: center;
   background-color: var(--c-grey-900);
   width: 100%;
   height: 76px;
-  bottom: -0.75rem;
+  bottom: -3.5rem;
   left: 0;
   padding-block: var(--spacing-200);
   padding-inline: var(--spacing-400);
@@ -190,14 +188,27 @@ main {
 }
 
 .card-socials {
+  width: 100%;
   display: flex;
   align-items: center;
   height: 32px;
 }
 
-.card-socials img {
+.card-socials p {
+  color: var(--c-grey-400);
+  text-transform: uppercase;
+  margin-inline-end: var(--spacing-300);
+}
+
+.card-socials .social-item {
   width: 20px;
   height: 20px;
+  margin-inline-end: var(--spacing-200);
+}
+
+.card-socials .share-btn img {
+  width: 15px;
+  height: 15px;
 }
 
 
