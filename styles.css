@@ -48,13 +48,13 @@ body {
 .text-preset-2-bold {
   font-size: 13px;
   line-height:1.4;
-  letter-spacing: 0.12%;
+  letter-spacing: 12%;
 }
 
 .text-preset-2-medium {
   font-size: 13px;
   line-height: 1.4;
-  letter-spacing: 0.12%;
+  letter-spacing: 12%;
 }
 
 .text-preset-3 {
@@ -65,8 +65,9 @@ body {
 
 
 main {
-  /* display: flex; */
-  /* align-items: center; */
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
   padding-inline: 1.5rem;
 }
 
@@ -87,4 +88,20 @@ main {
   object-fit: cover;
   object-position: 50% 25%;
  
+}
+
+.card-text-container {
+  padding-inline: var(--spacing-400);
+  padding-block-start: var(--spacing-400);
+  padding-block-end: var(--spacing-200);
+}
+
+.card-text-header {
+  color: var(--c-grey-900);
+  margin-block-end: var(--spacing-300);
+}
+
+.card-text-paragraph {
+  color: var(--c-grey-500);
+  margin-block-end: var(--spacing-600);
 }
