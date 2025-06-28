@@ -18,6 +18,17 @@
   --fw-bold: 700;
 }
 
+/* Google Icons */
+
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 18;
+  color: var(--c-grey-500);
+}
+
 /* Global styles */
 
 * {
@@ -154,6 +165,7 @@ main {
 }
 
 .share-btn {
+  background-color: var(--c-grey-200);
   margin-inline-start: auto;
   border-radius: 50%;
   border: 0;
@@ -168,6 +180,15 @@ main {
 .share-btn img {
   width: 15px;
   height: 15px;
+}
+
+/* Dark button for when socials container is open */
+.dark-btn {
+  background-color: var(--c-grey-500);
+}
+
+.dark-btn .material-symbols-outlined {
+  color: var(--c-white);
 }
 
 /* Card Socials Container */
