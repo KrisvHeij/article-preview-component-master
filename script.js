@@ -22,7 +22,6 @@ function closeSocials() {
 
 shareBtn.addEventListener("click", () => {
   isSocialOpen ? closeSocials() : showSocials();;
-  
 })
 
 closeBtn.addEventListener("click", () => {
