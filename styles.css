@@ -171,7 +171,7 @@ main {
   color: var(--c-grey-400);
 }
 
-.share-btn {
+.btn {
   background-color: var(--c-grey-200);
   margin-inline-start: auto;
   border-radius: 50%;
@@ -184,7 +184,7 @@ main {
   cursor: pointer;
 }
 
-.share-btn img {
+.btn img {
   width: 15px;
   height: 15px;
 }
@@ -235,20 +235,20 @@ main {
   margin-inline-end: var(--spacing-200);
 }
 
-.card-socials .share-btn img {
+.card-socials .btn img {
   width: 15px;
   height: 15px;
 }
 
 .show-socials {
   animation-name: show-socials;
-  animation-duration: 1s;
+  animation-duration: 500ms;
   animation-fill-mode: forwards;
 }
 
 .close-socials {
   animation-name: close-socials;
-  animation-duration: 1s;
+  animation-duration: 500ms;
   animation-fill-mode: forwards;
 }
 
@@ -263,6 +263,10 @@ main {
 }
 
 @keyframes close-socials {
+  from {
+    opacity: 1;
+    bottom: 0;
+  }
   to {
     opacity: 0.2;
     bottom: -5rem;
@@ -328,7 +332,7 @@ main {
     justify-content: center;
   }
 
-  .card-socials .share-btn {
+  .card-socials .btn {
     display: none;
   }
 }
