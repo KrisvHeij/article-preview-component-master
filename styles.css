@@ -82,7 +82,6 @@ a {
 body {
   font-family: "Manrope", sans-serif;
   background-color: var(--c-grey-200);
-  /* height: 100vh; */
 }
 
 main {
@@ -116,7 +115,6 @@ main {
 .card-img-container img {
   aspect-ratio: 1/1;
   object-fit: cover;
-  /* object-position: 50% 25%; */
 }
 
 /* Card Text */
@@ -143,7 +141,6 @@ main {
 .card-footer-container {
   display: flex;
   align-items: center;
-  /* position: relative; */
 }
 
 .card-profile-container {
@@ -396,7 +393,7 @@ main {
   }
 }
 
-
+/* Hidden class for overall use */
 
 .hidden {
   display: none;
