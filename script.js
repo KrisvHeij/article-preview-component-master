@@ -6,6 +6,8 @@ let isSocialOpen = false;
 function showSocials() {
   socialsContainer.classList.remove("close-socials", "hidden");
   socialsContainer.classList.add("show-socials");
+
+  isSocialOpen = true;
 }
 
 function closeSocials() {
@@ -14,10 +16,13 @@ function closeSocials() {
   setTimeout(() => {
     socialsContainer.classList.add("hidden");
   }, 500)
+  
+  isSocialOpen = false;
 }
 
 shareBtn.addEventListener("click", () => {
-  showSocials();
+  isSocialOpen ? closeSocials() : showSocials();;
+  
 })
 
 closeBtn.addEventListener("click", () => {
