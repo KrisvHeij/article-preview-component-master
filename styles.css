@@ -102,7 +102,7 @@ main {
   border-radius: 10px;
   box-shadow: 0 40px 40px hsl(210, 29%, 84%, 0.5);
   position: relative;
-  /* overflow: clip; */
+  overflow: clip;
 }
 
 /* Card Image */
@@ -248,7 +248,7 @@ main {
 
 .close-socials {
   animation-name: close-socials;
-  animation-duration: 500ms;
+  animation-duration: 1s;
   animation-fill-mode: forwards;
 }
 
@@ -277,6 +277,7 @@ main {
     min-width: 38rem;
     height: 21.625rem;
     display: flex;
+    overflow: visible;
   }
 
   .card-img-container {
@@ -305,9 +306,9 @@ main {
   .card-socials-container {
   width: 15.5rem;
   height: 60px;
-  bottom: 130px;
+  bottom: 125px;
   left: 218px;
-  padding-inline-end: var(--spacing-200);
+  padding-inline-end:  var(--spacing-200);
   border-radius: 10px;
   }
 
@@ -329,6 +330,33 @@ main {
 
   .card-socials .share-btn {
     display: none;
+  }
+}
+
+/* Media query > 1200px */
+@media (min-width: 75rem) {
+  .card-container {
+    min-width: 45.625rem;
+    height: 17.5rem;
+  }
+
+  .card-img-container img {
+    width: 100%;
+    object-position: 0% 25%;
+  }
+
+  .card-main-content {
+    justify-content: center;
+    padding-block: var(--spacing-300);
+  }
+
+  .card-profile-container {
+    padding-block-end: 0;
+  }
+
+  .card-socials-container {
+    bottom: 90px;
+    left: 264px;
   }
 }
 
