@@ -20,10 +20,19 @@ function closeSocials() {
   isSocialOpen = false;
 }
 
-shareBtn.addEventListener("click", () => {
-  isSocialOpen ? closeSocials() : showSocials();;
+shareBtn.addEventListener("click", (e) => {
+  e.stopPropagation();
+  isSocialOpen ? closeSocials() : showSocials();
 })
 
-closeBtn.addEventListener("click", () => {
+closeBtn.addEventListener("click", (e) => {
+  e.stopPropagation();
   closeSocials();
 })
+
+window.addEventListener("click", (e) => {
+  if (isSocialOpen && !socialsContainer.contains(e.target)) {
+    closeSocials();
+  }
+});
+
